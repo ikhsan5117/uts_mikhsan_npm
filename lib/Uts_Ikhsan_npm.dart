@@ -10,6 +10,8 @@ class MyUts extends StatelessWidget {
       Container(
         padding: EdgeInsets.all(15),
         child: Column(
+          children: [
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               spacing: 8,
@@ -22,7 +24,12 @@ class MyUts extends StatelessWidget {
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                 ),
               ],
-            
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 8,
+              children: [
             Text("Email :"),
             TextField(
               decoration: InputDecoration(
@@ -42,17 +49,21 @@ class MyUts extends StatelessWidget {
                 )
               ),
             ),
+            
             ElevatedButton(onPressed: () {
 
             }, child: Text("Login")
-            )
+            ),
+            Text("belum punya akun?Daftar disini")
+            
+          ],
           
-        ),
-        
-      ),
-      
-
-    
+            ),
+          ]
+            ),
+            
+      )
+            
     );
   }
 }
