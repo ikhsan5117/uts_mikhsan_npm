@@ -25,6 +25,7 @@ class MyUts extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 30),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,18 +44,21 @@ class MyUts extends StatelessWidget {
             Text("Password :"),
             TextField(
               decoration: InputDecoration(
+                suffixIcon: Icon(Icons.remove_red_eye),
                 hintText: "Masukan Password Anda",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 )
               ),
             ),
-            
-            ElevatedButton(onPressed: () {
+          
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(onPressed: () {
 
-            }, child: Text("Login")
+              }, child: Text("Login")),
             ),
-            Text("belum punya akun?Daftar disini")
+            Center(child: Text("Belum punya akun?Daftar disini", style: TextStyle(color: Colors.blue),))
             
           ],
           
