@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 
 class MyUts extends StatelessWidget {
   const MyUts({super.key});
-
-  @override
+  
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: 
       Container(
         padding: EdgeInsets.all(15),
         child: Column(
-          children: [
-            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
+              spacing: 8,
               children: [
                 Image(image: AssetImage("gambar/Logo.png"), width: 100, height: 100),
                 SizedBox(width: 10),
@@ -23,10 +22,30 @@ class MyUts extends StatelessWidget {
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                 ),
               ],
-            ),
-            Text("Email :"),
             
-          ],
+            Text("Email :"),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Masukan Email Anda",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                )
+              ),
+            ),
+
+            Text("Password :"),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Masukan Password Anda",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                )
+              ),
+            ),
+            ElevatedButton(onPressed: () {
+
+            }, child: Text("Login")
+            )
           
         ),
         
