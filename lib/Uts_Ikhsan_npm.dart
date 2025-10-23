@@ -25,7 +25,14 @@ class MyUts extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 30),
+           Column(
+             mainAxisAlignment: MainAxisAlignment.start,
+             crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+             Text("Sign in",style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+             Text("Enter your ID and Password to sign in"),
+             ]
+           ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,14 +65,12 @@ class MyUts extends StatelessWidget {
 
               }, child: Text("Login")),
             ),
-            Center(child: Text("Belum punya akun?Daftar disini", style: TextStyle(color: Colors.blue),))
-            
+            Center(child: Text("Belum punya akun?Daftar disini", style: TextStyle(color: Colors.blue)),
+            )
           ],
-          
             ),
           ]
-            ),
-            
+            ),  
       )
             
     );
