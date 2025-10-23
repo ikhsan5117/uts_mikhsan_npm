@@ -6,17 +6,31 @@ class MyUts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Image(image: AssetImage("gambar/Logo.png"), width: 100, height: 100),
-          SizedBox(width: 10), 
-          Text(
-            "LKS MART", 
-            style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-          ),
-        ],
+      body: 
+      Container(
+        padding: EdgeInsets.all(15),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image(image: AssetImage("gambar/Logo.png"), width: 100, height: 100),
+            SizedBox(width: 10),
+           
+            Text(
+              "LKS MART", 
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      ),
+
+      Container(
+        padding: EdgeInsets.all(15),
+        child: Row(
+          children: [
+            Text("sign In")
+          ],
+        ),
       ),
     
     );
